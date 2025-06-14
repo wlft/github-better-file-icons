@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Github Better File Icons",
+    "version": "0.0.0",
+    "version_name": "0.0.0 alpha",
+    "description": "a",
+    "icons": {
+        "48": "icons/extension/x.svg"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["https://github.com/*"],
+        "js": ["icons.js"],
+        "run_at": "document_idle"
+    }],
+    "web_accessible_resources": [{
+        "resources": ["icons/files/*.svg"],
+        "matches": ["https://github.com/*"]
+    }]
+}
