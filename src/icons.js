@@ -5,6 +5,24 @@ const file_icons = {
     'tsconfig.json': 'ts.svg',
     'tsconfig.types.json': 'ts.svg',
 
+    'luau': 'luau.svg',
+    'luaurc': 'luau.svg',
+
+    'wally.toml': 'wally.svg',
+    'wally.lock': 'wally.svg',
+
+    'aftman.toml': 'aftman.svg',
+
+    'darklua.json': 'darklua.svg',
+    'darklua.json5': 'darklua.svg',
+    'darklua.jsonc': 'darklua.svg',
+
+    'project.json': 'rojo-png.svg',
+    'model.json': 'rojo-png.svg',
+
+
+    'lua': 'lua.svg',
+
     'gitignore': 'git.svg',
     'git': 'git.svg',
     'gitattributes': 'git.svg',
