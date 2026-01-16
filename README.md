@@ -1,1 +1,1 @@
-(doesnt work)
+A chrome extension to replace github file icons with actual logos/icons.
