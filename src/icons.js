@@ -1,5 +1,6 @@
 const file_icons = {
     'js': 'js.svg',
+    'cjs': 'js.svg',
     'mjs': 'es.svg',
     'ts': 'ts.svg',
     'tsx': 'tsx.svg',
@@ -10,6 +11,8 @@ const file_icons = {
     'tsconfig.types.json': 'ts.svg',
 
     'py': 'py.svg',
+    'pylintrc': 'py.svg',
+    'pyproject.toml': 'pyproject.svg',
 
     'java': 'java.svg',
 
@@ -57,6 +60,19 @@ const file_icons = {
     'php': 'php.svg',
     'php.ini': 'php.svg',
 
+    'cpp': 'cpp.svg',
+    'hpp': 'cpp.svg',
+    'mm': 'ocpp.svg',
+    'cmake': 'cmake.svg',
+    'cmakelists.txt': 'cmake.svg',
+    'cmakepresets.json': 'cmake.svg',
+    'cmakecache.txt': 'cmake.svg',
+    'c': 'c.svg',
+    'h': 'c.svg',
+
+    'gn': 'ninja-by-alhadis.svg',
+    'ninja': 'ninja-by-alhadis.svg',
+
     'go': 'go.svg',
     'go.mod': 'go.svg',
     'go.sum': 'go.svg',
@@ -70,6 +86,7 @@ const file_icons = {
 
     'rb': 'ruby.svg',
     'ru': 'ruby.svg',
+    'ruby-version': 'ruby.svg',
     'gemfile': 'ruby.svg',
     'gemfile.lock': 'ruby.svg',
     'rakefile': 'ruby.svg',
@@ -94,6 +111,8 @@ const file_icons = {
     'git': 'git.svg',
     'gitattributes': 'git.svg',
     'gitmodules': 'git.svg',
+    'git-blame-ignore': 'git.svg',
+    'git-blame-ignore-revs': 'git.svg',
 
     'env': 'env.svg',
     'env.example': 'env.svg',
@@ -107,6 +126,8 @@ const file_icons = {
     'env.prod.example': 'env.svg',
     'env.production': 'env.svg',
     'env.production.example': 'env.svg',
+    'env.development': 'env.svg',
+    'env.development.example': 'env.svg',
 
     'prettier': 'prettier.svg',
     'prettierrc': 'prettier.svg',
@@ -154,6 +175,7 @@ const file_icons = {
     'npmrc': 'npm.svg',
     'npmrc.yml': 'npm.svg',
     'nvmrc': 'npm.svg',
+    'node-version': 'nodejs.svg',
 
     'pnpm-lock.yaml': 'pnpm.svg',
     'pnpm-workspace.yaml': 'pnpm.svg',
@@ -196,6 +218,16 @@ const file_icons = {
     'avif': 'image.svg',
     'apng': 'image.svg',
     'ico': 'ico.svg',
+
+    'swift': 'swift.svg',
+    'swift-format': 'swift.svg',
+    'swift-lint': 'swift.svg',
+    'swift-version': 'swift.svg',
+
+    'vcpkg.json': 'vcpkg.svg',
+    'vcpkg-configuration.json': 'vcpkg.svg',
+
+    'cursorrules': 'cursor.svg',
 };
 
 function get_icon_url(file_name) {
