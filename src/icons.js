@@ -2,8 +2,25 @@ const file_icons = {
     'js': 'js.svg',
     'mjs': 'es.svg',
     'ts': 'ts.svg',
+    'tsx': 'tsx.svg',
+    'jsx': 'jsx.svg',
     'tsconfig.json': 'ts.svg',
     'tsconfig.types.json': 'ts.svg',
+
+    'json': 'json.svg',
+    'json5': 'json.svg',
+    'jsonc': 'json.svg',
+
+    'css': 'css.svg',
+    'scss': 'scss.svg',
+    'less': 'less.svg',
+    'sass': 'scss.svg',
+    'styl': 'styl.svg',
+    'html': 'html.svg',
+
+    'next.config.js': 'nextjs.svg',
+    'next.config.mjs': 'nextjs.svg',
+    'next.config.ts': 'nextjs.svg',
 
     'luau': 'luau.svg',
     'luaurc': 'luau.svg',
@@ -20,8 +37,16 @@ const file_icons = {
     'project.json': 'rojo-png.svg',
     'model.json': 'rojo-png.svg',
 
+    'selene.toml': 'selene.svg',
 
     'lua': 'lua.svg',
+
+    'php': 'php.svg',
+    'php.ini': 'php.svg',
+
+    'localsettings.php': 'mediawiki.svg',
+    'wikitext': 'mediawiki.svg',
+    'wiki': 'mediawiki.svg',
 
     'gitignore': 'git.svg',
     'git': 'git.svg',
@@ -36,9 +61,17 @@ const file_icons = {
     'prettier': 'prettier.svg',
     'prettierrc': 'prettier.svg',
     'prettierrc.mjs': 'prettier.svg',
+    'prettierignore': 'prettier.svg',
+
+    'webpack.config.js': 'webpack.svg',
+    
+    'babelrc': 'babel.svg',
+    'babel.config': 'babel.svg',
 
 
     'nojekyll': 'jekyll.svg',
+    
+    'zensical.toml': 'zensical.svg',
 
     'md': 'md.svg',
     'mdx': 'mdx.svg',
@@ -66,6 +99,14 @@ const file_icons = {
     'pnpm-workspace.yaml': 'pnpm.svg',
     'pnpm-workspace.yml': 'pnpm.svg',
 
+    'yarn.lock': 'yarn.svg',
+    'yarnrc': 'yarn.svg',
+    'yarnrc.yml': 'yarn.svg',
+    'yarnrc.yaml': 'yarn.svg',
+
+    'bun.lock': 'bun.svg',
+    'bun.lockb': 'bun.svg',
+
     'tailwind.config.mjs': 'tailwindcss.svg',
     'tailwind.config.js': 'tailwindcss.svg',
 
@@ -73,8 +114,22 @@ const file_icons = {
     'postcss.config.js': 'postcss.svg',
 
     'eslintrc': 'eslint.svg',
+    'eslintignore': 'eslint.svg',
+    'eslint.config.js': 'eslint.svg',
+    'eslint.config.mjs': 'eslint.svg',
+    'eslint.config.cjs': 'eslint.svg',
+    'eslint.config.ts': 'eslint.svg',
+    'eslintrc.json': 'eslint.svg',
 
     'svg': 'svg.svg',
+    'png': 'image.svg',
+    'jpg': 'image.svg',
+    'jpeg': 'image.svg',
+    'gif': 'gif.svg',
+    'webp': 'image.svg',
+    'avif': 'image.svg',
+    'apng': 'image.svg',
+    'ico': 'ico.svg',
 };
 
 function get_icon_url(file_name) {
