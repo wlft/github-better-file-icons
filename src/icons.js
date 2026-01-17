@@ -55,6 +55,14 @@ const file_icons = {
 
     'selene.toml': 'selene.svg',
 
+    'rbxm': 'rbxm.svg',
+    'rbxl': 'rbxm.svg',
+    'rbxmx': 'rbxmx.svg',
+    'rbxlx': 'rbxmx.svg',
+
+    'sublime-project': 'sublime.svg',
+    'sublime-workspace': 'sublime.svg',
+
     'lua': 'lua.svg',
 
     'php': 'php.svg',
@@ -87,19 +95,19 @@ const file_icons = {
     'rb': 'ruby.svg',
     'ru': 'ruby.svg',
     'ruby-version': 'ruby.svg',
-    'gemfile': 'ruby.svg',
-    'gemfile.lock': 'ruby.svg',
+    'gemfile': 'rubygems.svg',
+    'gemfile.lock': 'rubygems.svg',
     'rakefile': 'ruby.svg',
     'rspec': 'ruby.svg',
     'yardopts': 'yardoc.svg',
-    'yard.gemspec': 'ruby.svg',
+    'yard.gemspec': 'yardoc.svg',
     'gemspec': 'rubygems.svg',
     'gem': 'rubygems.svg',
 
     'docker-compose.yml': 'docker.svg',
     'docker-compose.yaml': 'docker.svg',
     'dockerignore': 'docker.svg',
-    
+
     'turbo.json': 'turborepo.svg',
     'turbo.jsonc': 'turborepo.svg',
 
@@ -115,19 +123,6 @@ const file_icons = {
     'git-blame-ignore-revs': 'git.svg',
 
     'env': 'env.svg',
-    'env.example': 'env.svg',
-    'env.local': 'env.svg',
-    'env.local.example': 'env.svg',
-    'env.test': 'env.svg',
-    'env.test.example': 'env.svg',
-    'env.dev': 'env.svg',
-    'env.dev.example': 'env.svg',
-    'env.prod': 'env.svg',
-    'env.prod.example': 'env.svg',
-    'env.production': 'env.svg',
-    'env.production.example': 'env.svg',
-    'env.development': 'env.svg',
-    'env.development.example': 'env.svg',
 
     'prettier': 'prettier.svg',
     'prettierrc': 'prettier.svg',
@@ -135,7 +130,7 @@ const file_icons = {
     'prettierignore': 'prettier.svg',
 
     'webpack.config.js': 'webpack.svg',
-    
+
     'babelrc': 'babel.svg',
     'babel.config': 'babel.svg',
 
@@ -147,7 +142,7 @@ const file_icons = {
 
 
     'nojekyll': 'jekyll.svg',
-    
+
     'zensical.toml': 'zensical.svg',
 
     'md': 'md.svg',
@@ -232,20 +227,27 @@ const file_icons = {
 
 function get_icon_url(file_name) {
     const name_lower = file_name.toLowerCase();
+
+    // 1
     const parts = name_lower.split('.');
-
-    // iterate through the name
-    // e.g. "foo.model.json" -> "foo.model.json", "model.json", "json"
-    // e.g. ".gitignore" -> ".gitignore", "gitignore"
     for (let i = 0; i < parts.length; i++) {
-        // if it starts with dot, parts[0] is empty
-        // i=0 joined is ".gitignore". i=1 joined is "gitignore"
-
         const suffix = parts.slice(i).join('.');
         if (!suffix) continue;
-
         if (file_icons[suffix]) {
             return chrome.runtime.getURL(`icons/files/${file_icons[suffix]}`);
+        };
+    };
+
+    // 2
+    if (name_lower.startsWith('.')) {
+        const after_dot = name_lower.slice(1);
+        const segments = after_dot.split(/[\._-]/);
+
+        if (segments.length > 0 && segments[0]) {
+            const stem = segments[0];
+            if (file_icons[stem]) {
+                return chrome.runtime.getURL(`icons/files/${file_icons[stem]}`);
+            };
         };
     };
 
