@@ -2,10 +2,12 @@ const file_icons = {
     'js': 'js.svg',
     'cjs': 'js.svg',
     'mjs': 'es.svg',
+    'jsdoc': 'js.svg',
     'ts': 'ts.svg',
     'tsx': 'tsx.svg',
     'jsx': 'jsx.svg',
     'tsconfig.json': 'ts.svg',
+    'tsconfig-base.json': 'ts.svg',
     'tsconfig.app.json': 'ts.svg',
     'tsconfig.node.json': 'ts.svg',
     'tsconfig.types.json': 'ts.svg',
@@ -78,6 +80,11 @@ const file_icons = {
     'c': 'c.svg',
     'h': 'c.svg',
 
+    'sh': 'bash.svg',
+
+    'lefthook.yml': 'lefthook.svg',
+    'lefthook.yaml': 'lefthook.svg',
+
     'gn': 'ninja-by-alhadis.svg',
     'ninja': 'ninja-by-alhadis.svg',
 
@@ -93,6 +100,7 @@ const file_icons = {
     'rust-toolchain.toml': 'rust.svg',
 
     'rb': 'ruby.svg',
+    'ruby': 'ruby.svg',
     'ru': 'ruby.svg',
     'ruby-version': 'ruby.svg',
     'gemfile': 'rubygems.svg',
@@ -105,6 +113,7 @@ const file_icons = {
     'gem': 'rubygems.svg',
 
     'docker-compose.yml': 'docker.svg',
+    'd': 'docker.svg',
     'docker-compose.yaml': 'docker.svg',
     'dockerignore': 'docker.svg',
 
@@ -219,10 +228,14 @@ const file_icons = {
     'swift-lint': 'swift.svg',
     'swift-version': 'swift.svg',
 
+    'streerc': 'discourse.svg',
+
     'vcpkg.json': 'vcpkg.svg',
     'vcpkg-configuration.json': 'vcpkg.svg',
 
     'cursorrules': 'cursor.svg',
+    'mdc': 'cursor.svg',
+    'claude.md': 'claude.svg',
 };
 
 function get_icon_url(file_name) {
