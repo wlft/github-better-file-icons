@@ -111,6 +111,11 @@ const file_icons = {
     'rustfmt.toml': 'rust.svg',
     'rust-toolchain.toml': 'rust.svg',
 
+    'zig': 'zig.svg',
+    'zig.toml': 'zig.svg',
+    'zon': 'zig.svg',
+    'ziggy': 'zig.svg',
+
     'rb': 'ruby.svg',
     'ruby': 'ruby.svg',
     'ru': 'ruby.svg',
