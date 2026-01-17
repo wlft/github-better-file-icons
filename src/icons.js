@@ -57,6 +57,8 @@ const file_icons = {
 
     'selene.toml': 'selene.svg',
 
+    'zap': 'zap.svg',
+
     'rbxm': 'rbxm.svg',
     'rbxl': 'rbxm.svg',
     'rbxmx': 'rbxmx.svg',
