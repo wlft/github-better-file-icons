@@ -227,6 +227,10 @@ const file_icons = {
     'postcss.config.mjs': 'postcss.svg',
     'postcss.config.js': 'postcss.svg',
 
+    'railway.toml': 'railway.svg',
+    'railway.json': 'railway.svg',
+    'railwayignore': 'railway.svg',
+
     'eslintrc': 'eslint.svg',
     'eslintignore': 'eslint.svg',
     'eslint.config.js': 'eslint.svg',
