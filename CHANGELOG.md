@@ -1,5 +1,23 @@
 # Changelog
 
+## [0.2.0](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/compare/github-better-file-icons-v0.1.0...github-better-file-icons-v0.2.0) (2026-01-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate to wxt
+
+### Features
+
+* **icons:** .luacheckrc ([5d93272](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/5d93272d3cb38bfd504b8c6deeddee04dc0efd79))
+* **icons:** .luacheckrc, .luacov ([85cb0d1](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/85cb0d1758a0a7900812e73fe5c7e55041ff1351))
+* **icons:** dockerfile ([fd074a1](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/fd074a1f98065e85a88c7725db1fbe77588d9a1f))
+* **icons:** drizzle ([897164e](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/897164ebf899a3890fbc87041fc546f7db463362))
+* **icons:** luacov ([662e337](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/662e337e56d88ab17737bc2040d0e49291a4afa3))
+* **icons:** wxt ([2c83f2c](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/2c83f2c109e40c6fb91624d144d09c1fb32cd2c5))
+* migrate to wxt ([4b3b656](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/4b3b656beae93b991308b33b149afe7a07c84dd1))
+* **wxt:** use /src directory ([ca641fe](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/ca641fe11f23891914e9c5143d7535fdc4961cba))
+
 ## [0.1.0](https://github.com/wlft/github-better-file-icons/compare/github-better-file-icons-v0.0.1...github-better-file-icons-v0.1.0) (2026-01-18)
 
 

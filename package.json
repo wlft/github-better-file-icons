@@ -2,7 +2,7 @@
   "name": "github-better-file-icons",
   "description": "Adds icons for various projects and file types on GitHub.",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "wxt",
