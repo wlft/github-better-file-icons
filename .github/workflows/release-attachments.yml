@@ -1,0 +1,46 @@
+name: Build WXT Extensions and Attach to Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-attach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build WXT extensions
+        run: pnpm build
+
+      - name: Zip Firefox extension
+        run: pnpm zip:firefox
+
+      - name: Zip Chrome extension
+        run: pnpm zip
+
+      - name: Attach extensions to release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            .output/github-better-file-icons-*-firefox.zip
+            .output/github-better-file-icons-*-chrome.zip
