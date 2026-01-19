@@ -4,6 +4,9 @@
         ".": {
             "release-type": "simple",
             "package-name": "github-better-file-icons",
+            "extra-files": [
+                "package.json"
+            ],
             "prerelease": true
         }
     }
