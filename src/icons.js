@@ -69,6 +69,7 @@ const file_icons = {
 
     'lua': 'lua.svg',
     'luacheckrc': 'lua.svg',
+    'luacov': 'luacov.svg',
 
     'php': 'php.svg',
     'php.ini': 'php.svg',
