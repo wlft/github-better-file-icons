@@ -281,6 +281,8 @@ export default defineContentScript({
             'cname': 'cname.svg',
 
             'license': 'license.svg',
+            'readme': 'readme.svg',
+            'readme.md': 'readme.svg',
 
             'hbs': 'handlebars.svg',
 
