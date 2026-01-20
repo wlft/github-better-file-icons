@@ -280,6 +280,8 @@ export default defineContentScript({
             'cname': 'cname.svg',
 
             'license*': 'license.svg',
+            'copying': 'license.svg',
+            'copyright': 'license.svg',
             'readme': 'readme.svg',
             'readme.md': 'readme.svg',
             'changelog': 'changelog.svg',
@@ -318,7 +320,13 @@ export default defineContentScript({
             // unlike file_icons, folder_icons entries should begin with a `.` if necessary
             'src': 'src.svg',
             'docs': 'docs.svg',
+
             'public': 'public.svg',
+            'images': 'public.svg',
+            'assets': 'public.svg',
+
+            '.i18n': 'i18n.svg',
+
             'include': 'include.svg',
             'scripts': 'scripts.svg',
             'script': 'scripts.svg',
