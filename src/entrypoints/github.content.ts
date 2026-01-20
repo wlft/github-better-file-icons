@@ -39,8 +39,8 @@ export default defineContentScript({
 
             'drizzle.config*': 'drizzle.svg',
 
-            'wxt.config.ts': 'wxt.svg',
-            'web-ext.config.ts': 'wxt.svg',
+            'wxt.config*': 'wxt.svg',
+            'web-ext.config*': 'wxt.svg',
 
             'vue': 'vue.svg',
 
@@ -349,7 +349,7 @@ export default defineContentScript({
             for (const { prefix, icon } of wildcard_suffix_file_icons) {
                 if (name_lower.startsWith(prefix)) {
                     return browser.runtime.getURL(`icons/files/${icon}`);
-                }
+                };
             };
 
             // 3
@@ -371,6 +371,12 @@ export default defineContentScript({
                     const stem = segments[0];
                     if (file_icons[stem]) {
                         return browser.runtime.getURL(`icons/files/${file_icons[stem]}`);
+                    };
+
+                    for (const { prefix, icon } of wildcard_suffix_file_icons) {
+                        if (stem.startsWith(prefix)) {
+                            return browser.runtime.getURL(`icons/files/${icon}`);
+                        };
                     };
                 };
             };
