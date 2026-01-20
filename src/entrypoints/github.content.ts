@@ -167,16 +167,11 @@ export default defineContentScript({
             'env': 'env.svg',
 
             'prettier': 'prettier.svg',
-            'prettierrc': 'prettier.svg',
-            'prettierrc.mjs': 'prettier.svg',
-            'prettier.cjs': 'prettier.svg',
-            'prettier.js': 'prettier.svg',
             'prettierignore': 'prettier.svg',
+            'prettierrc*': 'prettier.svg',
+            'prettier*': 'prettier.svg',
 
-            'stylelintrc': 'stylelint.svg',
-            'stylelintrc.mjs': 'stylelint.svg',
-            'stylelintrc.cjs': 'stylelint.svg',
-            'stylelintrc.js': 'stylelint.svg',
+            'stylelintrc*': 'stylelint.svg',
             'stylelintignore': 'stylelint.svg',
 
             'webpack.config*': 'webpack.svg',
@@ -344,6 +339,12 @@ export default defineContentScript({
                     prefix: key.slice(0, -1),
                     icon: file_icons[key],
                 });
+
+                wildcard_suffix_file_icons.push({
+                    prefix: '.' + key.slice(0, -1),
+                    icon: file_icons[key],
+                });
+
                 delete file_icons[key];
             }
         }
@@ -382,12 +383,6 @@ export default defineContentScript({
                     const stem = segments[0];
                     if (file_icons[stem]) {
                         return browser.runtime.getURL(`icons/files/${file_icons[stem]}`);
-                    };
-
-                    for (const { prefix, icon } of wildcard_suffix_file_icons) {
-                        if (stem.startsWith(prefix)) {
-                            return browser.runtime.getURL(`icons/files/${icon}`);
-                        };
                     };
                 };
             };
