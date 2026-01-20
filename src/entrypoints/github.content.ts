@@ -298,6 +298,7 @@ export default defineContentScript({
             'public': 'public.svg',
 
             'vscode': 'vscode.svg',
+            'github': 'github.svg',
         };
 
         function get_icon_url(file_name: string) {
