@@ -179,7 +179,15 @@ export default defineContentScript({
             'prettier': 'prettier.svg',
             'prettierrc': 'prettier.svg',
             'prettierrc.mjs': 'prettier.svg',
+            'prettier.cjs': 'prettier.svg',
+            'prettier.js': 'prettier.svg',
             'prettierignore': 'prettier.svg',
+
+            'stylelintrc': 'stylelint.svg',
+            'stylelintrc.mjs': 'stylelint.svg',
+            'stylelintrc.cjs': 'stylelint.svg',
+            'stylelintrc.js': 'stylelint.svg',
+            'stylelintignore': 'stylelint.svg',
 
             'webpack.config.js': 'webpack.svg',
 
@@ -269,6 +277,7 @@ export default defineContentScript({
             'railwayignore': 'railway.svg',
 
             'eslintrc': 'eslint.svg',
+            'eslintrc.js': 'eslint.svg',
             'eslintignore': 'eslint.svg',
             'eslint.config.js': 'eslint.svg',
             'eslint.config.mjs': 'eslint.svg',
