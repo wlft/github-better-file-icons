@@ -293,6 +293,11 @@ export default defineContentScript({
             'gemini.md': 'gemini-65.svg',
         };
 
+        const folder_icons: Record<string, string> = {
+            'src': 'src.svg',
+            'public': 'public.svg',
+        };
+
         function get_icon_url(file_name: string) {
             const name_lower = file_name.toLowerCase();
 
@@ -320,7 +325,36 @@ export default defineContentScript({
             };
 
             return null;
-        }
+        };
+
+        function get_folder_icon_url(folder_name: string) {
+            const name_lower = folder_name.toLowerCase();
+
+            // 1
+            const parts = name_lower.split('.');
+            for (let i = 0; i < parts.length; i++) {
+                const suffix = parts.slice(i).join('.');
+                if (!suffix) continue;
+                if (folder_icons[suffix]) {
+                    return browser.runtime.getURL(`icons/folders/${folder_icons[suffix]}`);
+                };
+            };
+
+            // 2
+            if (name_lower.startsWith('.')) {
+                const after_dot = name_lower.slice(1);
+                const segments = after_dot.split(/[\._-]/);
+
+                if (segments.length > 0 && segments[0]) {
+                    const stem = segments[0];
+                    if (folder_icons[stem]) {
+                        return browser.runtime.getURL(`icons/folders/${folder_icons[stem]}`);
+                    };
+                };
+            };
+
+            return null;
+        };
 
         function replace_file_icon(row: Element, icon_element: Element, file_name: string) {
             if (!icon_element) return;
@@ -340,7 +374,27 @@ export default defineContentScript({
             img.style.height = '16px';
             img.style.verticalAlign = 'text-bottom';
             icon_element.replaceWith(img);
-        }
+        };
+
+        function replace_folder_icon(row: Element, icon_element: Element, folder_name: string) {
+            if (!icon_element) return;
+
+            const url = get_folder_icon_url(folder_name);
+            if (!url) return;
+
+            if (icon_element.getAttribute('data-replaced')) return;
+
+            const img = document.createElement('img');
+            img.src = url;
+
+            img.className = icon_element.getAttribute('class') || '';
+            img.setAttribute('data-replaced', 'true');
+
+            img.style.width = '16px';
+            img.style.height = '16px';
+            img.style.verticalAlign = 'text-bottom';
+            icon_element.replaceWith(img);
+        };
 
         function process_main_table(root: Document | Element = document) {
             const rows = root.querySelectorAll('tr.react-directory-row');
@@ -349,14 +403,13 @@ export default defineContentScript({
                 const link = row.querySelector('a.Link--primary');
                 if (!link) return;
 
-                const aria_label = link.getAttribute('aria-label') || '';
-                if (aria_label.includes('(Directory)')) return;
-
                 const file_name = link.textContent?.trim() || '';
                 const svg = row.querySelector('svg.octicon');
 
                 if (svg && (svg.classList.contains('octicon-file') || svg.classList.contains('octicon-file-text') || svg.classList.contains('color-fg-muted'))) {
                     replace_file_icon(row, svg, file_name);
+                } else if (svg && (svg.classList.contains('octicon-file-directory') || svg.classList.contains('octicon-file-directory-fill') || svg.classList.contains('icon-directory'))) {
+                    replace_folder_icon(row, svg, file_name);
                 };
             });
         }

@@ -11,7 +11,7 @@ export default defineConfig({
         },
         web_accessible_resources: [
             {
-                resources: ['icons/files/*.svg'],
+                resources: ['icons/files/*.svg', 'icons/folders/*.svg'],
                 matches: ['https://github.com/*'],
             },
         ],
