@@ -291,6 +291,18 @@ export default defineContentScript({
             'security': 'security.svg',
             'security.md': 'security.svg',
 
+            'cspell.json': 'cspell.svg',
+            'cspell.yaml': 'cspell.svg',
+            'cspell.yml': 'cspell.svg',
+            'cspell.config.js': 'cspell.svg',
+            'cspell.config.mjs': 'cspell.svg',
+            'cspell.config.cjs': 'cspell.svg',
+            'cspell.config.ts': 'cspell.svg',
+            'cspell.config.json': 'cspell.svg',
+            'cspell.config.yml': 'cspell.svg',
+            'cspell.config.yaml': 'cspell.svg',
+            'cspell.config.toml': 'cspell.svg',
+
             'hbs': 'handlebars.svg',
 
             'cliff.toml': 'gitcliff-png.svg',
