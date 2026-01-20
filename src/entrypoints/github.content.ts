@@ -285,9 +285,10 @@ export default defineContentScript({
             'readme.md': 'readme.svg',
             'changelog': 'changelog.svg',
             'changelog.md': 'changelog.svg',
-
             'todo': 'todo.svg',
             'todo.md': 'todo.svg',
+            'security': 'security.svg',
+            'security.md': 'security.svg',
 
             'hbs': 'handlebars.svg',
 
