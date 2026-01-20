@@ -308,6 +308,8 @@ export default defineContentScript({
 
             'hbs': 'handlebars.svg',
 
+            'localazy.json': 'localazy.svg',
+
             'cliff.toml': 'gitcliff-png.svg',
 
             'release-please-manifest.json': 'googlecloud.svg',
