@@ -318,7 +318,7 @@ export default defineContentScript({
 
             'public': 'public.svg',
             'images': 'public.svg',
-            'assets': 'public.svg',
+            'assets': 'assets.svg',
 
             'i18n': 'i18n.svg',
             '.i18n': 'i18n.svg',
