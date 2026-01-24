@@ -323,6 +323,11 @@ export default defineContentScript({
             'i18n': 'i18n.svg',
             '.i18n': 'i18n.svg',
 
+            'lib': 'lib.svg',
+            '.lib': 'lib.svg',
+            'libs': 'lib.svg',
+            '.libs': 'lib.svg',
+
             'include': 'include.svg',
             'scripts': 'scripts.svg',
             'script': 'scripts.svg',
