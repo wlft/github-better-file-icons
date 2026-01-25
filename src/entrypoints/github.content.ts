@@ -314,6 +314,7 @@ export default defineContentScript({
         const folder_icons: Record<string, string> = {
             // unlike file_icons, folder_icons entries should begin with a `.` if necessary
             'src': 'src.svg',
+            'source': 'src.svg',
             'docs': 'docs.svg',
 
             'public': 'public.svg',
