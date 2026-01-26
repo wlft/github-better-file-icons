@@ -328,6 +328,8 @@ export default defineContentScript({
             '.lib': 'lib.svg',
             'libs': 'lib.svg',
             '.libs': 'lib.svg',
+            'library': 'lib.svg',
+            '.library': 'lib.svg',
 
             'include': 'include.svg',
             'scripts': 'scripts.svg',
