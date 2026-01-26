@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.1](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/compare/v0.6.0...v0.6.1) (2026-01-26)
+
+
+### Bug Fixes
+
+* **icons:** support legacy source directory ([0a58a97](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/0a58a97c05d9ad64497dbcdd5f438bcc71eef51e))
+* **icons:** support missing matchings for 'lib' ([a70b599](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/commit/a70b59954c55feb85e303ea4222b910d17fc9026))
+
 ## [0.6.0](https://github.com/wlft/browser-extensions-GitHubBetterFileIcons/compare/v0.5.0...v0.6.0) (2026-01-24)
 
 
