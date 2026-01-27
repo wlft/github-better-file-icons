@@ -7,3 +7,4 @@ A browser extension to replace github file & folder icons with actual logos/icon
 * .txt
 * .pb
 * .pdf
+* .rst
