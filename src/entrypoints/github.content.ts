@@ -282,6 +282,7 @@ export default defineContentScript({
             'copyright': 'license.svg',
             'readme': 'readme.svg',
             'readme.md': 'readme.svg',
+            'readme-*': 'readme.svg',
             'changelog': 'changelog.svg',
             'changelog.md': 'changelog.svg',
             'todo': 'todo.svg',
