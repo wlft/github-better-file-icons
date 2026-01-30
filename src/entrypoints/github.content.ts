@@ -148,7 +148,7 @@ export default defineContentScript({
             'd': 'docker.svg',
             'docker-compose.yaml': 'docker.svg',
             'dockerignore': 'docker.svg',
-            'dockerfile': 'docker.svg',
+            'dockerfile*': 'docker.svg',
 
             'turbo.json': 'turborepo.svg',
             'turbo.jsonc': 'turborepo.svg',
