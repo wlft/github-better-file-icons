@@ -337,6 +337,8 @@ export default defineContentScript({
             
             'app': 'app.svg',
 
+            'packages': 'packages.svg',
+
             'include': 'include.svg',
             'scripts': 'scripts.svg',
             'script': 'scripts.svg',
