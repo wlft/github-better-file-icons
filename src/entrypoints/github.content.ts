@@ -316,6 +316,9 @@ export default defineContentScript({
 
             'cliff.toml': 'gitcliff-png.svg',
 
+            'zizmor.yml': 'zizmor.svg',
+            'zizmor.yaml': 'zizmor.svg',
+
             'release-please-manifest.json': 'googlecloud.svg',
             'release-please-config.json': 'googlecloud.svg',
 
