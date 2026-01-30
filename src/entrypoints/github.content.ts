@@ -35,7 +35,7 @@ export default defineContentScript({
             'next.config*': 'nextjs.svg',
 
             'vite.config*': 'vite.svg',
-            'vitest.config*': 'vitest.svg',
+            'vitest*': 'vitest.svg',
 
             'drizzle.config*': 'drizzle.svg',
 
