@@ -179,6 +179,8 @@ export default defineContentScript({
 
             'oxfmtrc.json': 'oxc.svg',
             'oxfmtrc.jsonc': 'oxc.svg',
+            'oxlintrc.json': 'oxc.svg',
+            'oxlintrc.jsonc': 'oxc.svg',
 
             'webpack.config*': 'webpack.svg',
 
