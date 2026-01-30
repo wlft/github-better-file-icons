@@ -37,6 +37,10 @@ export default defineContentScript({
             'vite.config*': 'vite.svg',
             'vitest*': 'vitest.svg',
 
+            'fly.toml': 'fly.svg',
+            'fly.private.toml': 'fly.svg',
+            'fly.release.toml': 'fly.svg',
+
             'drizzle.config*': 'drizzle.svg',
 
             'wxt.config*': 'wxt.svg',
